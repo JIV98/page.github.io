@@ -1,0 +1,248 @@
+/* configuración principal para la página completa  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: #f2f2f2;
+}
+
+.contenedor {
+	padding: 60px;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo {
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+/* estilos para el header */
+
+header {
+	width: 100%;
+	height: 600px;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, hsla(214, 84%, 56%, 0.532), hsla(188, 100%, 85%, 0.891));
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, hsla(214, 84%, 56%, 0.532), hsla(188, 100%, 85%, 0.891));
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+}
+
+nav {
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+nav>a {
+	color: rgb(0, 0, 0);
+	font-weight: 600;
+	text-decoration: none;
+	margin-right: 10px;
+}
+
+nav>a:hover {
+	text-decoration: underline;
+}
+
+header .textos-header {
+	display: flex;
+	height: 430px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.textos-header h1 {
+	font-size: 50px;
+	font-weight: 600;
+	color: rgb(0, 0, 0);
+}
+
+.textos-header h2 {
+	font-size: 30px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* about us */
+
+.contenedor-sobre-nosotros {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.img-about-us {
+	width: 60%;
+}
+
+.contenedor-sobre-nosotros .contenido-textos {
+	width: 40%;
+}
+
+.contenidos-textos h3 {
+	margin-left: 10px;
+	margin-bottom: 15px;
+}
+
+.contenido-textos span {
+	color: rgb(0, 0, 0);
+	background-color: rgb(177, 245, 255);
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	height: 30px;
+	padding: 1px;
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.contenido-textos p {
+	padding: 0px 0px 30px 15px;
+	font-weight: 400;
+	text-align: justify;
+}
+
+.portafolio {
+	background: #f2f2f2;
+}
+
+.galeria-port {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.imagen-port {
+	width: 24%;
+	height: 180px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4)
+}
+
+.imagen-port>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+/* clients */
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.cards .card {
+	background-color: rgb(177, 245, 255);
+	display: flex;
+	width: 46%;
+	height: 180px;
+	justify-content: space-evenly;
+	align-items: center;
+	border-radius: 5px;
+}
+
+.cards .card img {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+	display: block;
+	border-radius: 5px;
+}
+
+.cards .card .contenido-texto-card {
+	width: 60%;
+	color: rgb(0, 0, 0);
+}
+
+.cards .card>.contenido-texto-card {
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+/* Our Team  */
+.about-services {
+	background-color: #f2f2f2;
+	padding-bottom: 30px;
+}
+
+.servicio-cont {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.servicio-ind {
+	width: 28%;
+	text-align: center;
+}
+
+.servicio-ind img {
+	width: 90%;
+}
+
+.servicio-ind h3 {
+	margin: 10px 0;
+}
+
+/* footer */
+footer {
+	background-color: #bebebe;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden;
+}
+
+.contenedor-footer {
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #4e4e4e;
+}
+
+.content-foo {
+	text-align: center;
+}
+
+.content-foo h4 {
+	color: rgb(0, 0, 0);
+	border-bottom: 3px solid rgb(76, 172, 187);
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.content-foo p {
+	color: rgb(0, 0, 0);
+}
+
+.titulo-final {
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+	color: #4e4e4e;
+}
